@@ -1,13 +1,19 @@
 package com.buba.pojo;
 
 
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.util.Date;
+
 public class Borrow {
 
   private long id;
   private long studentId;
   private long bookId;
-  private java.sql.Timestamp startTime;
-  private java.sql.Timestamp endTime;
+  @DateTimeFormat(pattern = "yyyy-MM-dd")
+  private Date startTime;
+  @DateTimeFormat(pattern = "yyyy-MM-dd")
+  private Date endTime;
   private long status;
   private long isDel;
 
@@ -39,7 +45,7 @@ public class Borrow {
   }
 
 
-  public java.sql.Timestamp getStartTime() {
+  public Date getStartTime() {
     return startTime;
   }
 
@@ -48,7 +54,7 @@ public class Borrow {
   }
 
 
-  public java.sql.Timestamp getEndTime() {
+  public Date getEndTime() {
     return endTime;
   }
 

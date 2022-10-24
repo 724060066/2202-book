@@ -1,6 +1,10 @@
 package com.buba.pojo;
 
 
+import org.springframework.format.annotation.DateTimeFormat;
+
+import java.util.Date;
+
 public class Student {
 
   private long id;
@@ -8,8 +12,10 @@ public class Student {
   private String studentCode;
   private String studentName;
   private String sex;
-  private java.sql.Timestamp startTime;
-  private java.sql.Timestamp endTime;
+  @DateTimeFormat(pattern = "yyyy-MM-dd")
+  private Date startTime;
+  @DateTimeFormat(pattern = "yyyy-MM-dd")
+  private Date endTime;
   private String phone;
   private long isDel;
 
@@ -59,7 +65,7 @@ public class Student {
   }
 
 
-  public java.sql.Timestamp getStartTime() {
+  public Date getStartTime() {
     return startTime;
   }
 
@@ -68,7 +74,7 @@ public class Student {
   }
 
 
-  public java.sql.Timestamp getEndTime() {
+  public Date getEndTime() {
     return endTime;
   }
 
