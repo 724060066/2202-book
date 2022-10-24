@@ -49,7 +49,7 @@ public class Borrow {
     return startTime;
   }
 
-  public void setStartTime(java.sql.Timestamp startTime) {
+  public void setStartTime(Date startTime) {
     this.startTime = startTime;
   }
 
@@ -58,7 +58,7 @@ public class Borrow {
     return endTime;
   }
 
-  public void setEndTime(java.sql.Timestamp endTime) {
+  public void setEndTime(Date endTime) {
     this.endTime = endTime;
   }
 

@@ -69,7 +69,7 @@ public class Student {
     return startTime;
   }
 
-  public void setStartTime(java.sql.Timestamp startTime) {
+  public void setStartTime(Date startTime) {
     this.startTime = startTime;
   }
 
@@ -78,7 +78,7 @@ public class Student {
     return endTime;
   }
 
-  public void setEndTime(java.sql.Timestamp endTime) {
+  public void setEndTime(Date endTime) {
     this.endTime = endTime;
   }
 
